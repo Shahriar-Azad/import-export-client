@@ -1,16 +1,24 @@
-# React + Vite
+Import Export Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Site URL: https://import-export-hub-shahriarazad.netlify.app/
 
-Currently, two official plugins are available:
+A comprehensive platform connecting global exporters and importers, enabling seamless product trading with real-time inventory management and secure authentication.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live Links:
 
-## React Compiler
+Client (Frontend): https://import-export-hub-shahriarazad.netlify.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Server (Backend): https://import-export-server-eight.vercel.app/
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Key Features:-
+1. Secure Multi-Method Authentication
+Complete Firebase-powered authentication system with email/password registration, Google OAuth integration, real-time password validation (uppercase, lowercase, minimum 6 characters), and persistent login sessions that maintain user state across page refreshes and browser restarts.
+2. Smart One-Click Import System
+Effortlessly import products with an intelligent modal interface featuring live quantity validation, automatic prevention of over-ordering, real-time inventory synchronization, and instant database updates using MongoDB's $inc operator to ensure accurate stock levels at all times.
+3. Complete Export Management Dashboard
+Comprehensive product management suite with full CRUD operations including add new products, update existing listings through pre-filled modal forms, delete products with confirmation dialogs, and export your entire product catalog to CSV format for offline analysis and record-keeping.
+4. Real-Time Product Search Engine
+Lightning-fast search functionality that filters through thousands of products instantly as you type, with case-insensitive matching, live result updates, and a clean display showing the number of matching products without any page reloads.
+5. Persistent Dark Mode Theme
+Eye-friendly dark mode implementation with smooth color transitions, localStorage persistence to remember user preference across sessions, system-wide theme application affecting all pages and components, and instant toggle switching for comfortable viewing in any lighting condition.
