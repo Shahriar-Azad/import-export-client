@@ -10,6 +10,14 @@ import MyExports from '../pages/MyExports';
 import AddExport from '../pages/AddExport';
 import ErrorPage from '../pages/ErrorPage';
 import PrivateRoute from '../components/shared/PrivateRoute';
+import About from '../components/home/About';
+import Blog from '../components/home/Blog';
+import Contact from '../components/home/Contact';
+import Support from '../components/home/Support';
+import Privacy from '../components/home/Privacy';
+// import Dashboard from '../pages/Dashboard';
+import MyProfile from '../pages/MyProfile';
+
 
 const router = createBrowserRouter([
   {
@@ -32,6 +40,42 @@ const router = createBrowserRouter([
       {
         path: '/all-products',
         element: <AllProducts />
+      },
+      {
+        path: '/about',
+        element: <About />
+      },
+      {
+        path: '/blog',
+        element: <Blog />
+      },
+      {
+        path: '/contact',
+        element: <Contact />
+      },
+      {
+        path: '/support',
+        element: <Support />
+      },
+      {
+        path: '/privacy',
+        element: <Privacy />
+      },
+      //       {
+      //   path: '/dashboard',
+      //   element: (
+      //     <PrivateRoute>
+      //       <Dashboard />
+      //     </PrivateRoute>
+      //   )
+      // },
+      {
+        path: '/my-profile',
+        element: (
+          <PrivateRoute>
+            <MyProfile />
+          </PrivateRoute>
+        )
       },
       {
         path: '/product/:id',
